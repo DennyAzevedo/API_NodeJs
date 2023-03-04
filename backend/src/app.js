@@ -4,11 +4,13 @@ import express from 'express';
 import mongoose from 'mongoose';
 import path from 'path';
 import routes from './router';
+import dotenv from 'dotenv';
 
+dotenv.config();
 class App{
 	constructor() {
 		this.server = express();
-		mongoose.connect('mongodb+srv://denny:Me109G6@devhouse.szwp0kw.mongodb.net/?retryWrites=true&w=majority', {
+		mongoose.connect(process.env.DATABASE, {
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
 		});
