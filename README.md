@@ -4,13 +4,26 @@
 
 Projeto criado durante estudo de Node.js, em curso da Udemy.
 
+#### Pacotes Utilizados:
+
+* nodemon
+* express
+* sucrase
+* dotenv
+* mongoose
+* multer
+* yup
+* cors
+
+#### Banco de Dados: MongoDB
+
 Projetos do curso [Udemy](https://www.udemy.com/course/curso-nodejs/)
 
 ### Curso: Curso completo de APIs com Nodejs, Express + MongoDB, SQL
 
 _Tutor: Matheus Fraga_
 
-**Utilizado em aulas nos cursos:**  
+**Utilizado em aulas nos cursos:**
 _Dev FullStack JS da [Soitech](https://www.soitech.com.br/)_
 
 Autor: **Denny Paulista Azevedo Filho**
