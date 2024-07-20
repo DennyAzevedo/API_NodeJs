@@ -21,7 +21,6 @@ class ReserveController{
     if(!house){
       return res.status(400).json({ error: 'Essa casa não existe.' });
     }
-
     if(house.status !== true){
       return res.status(400).json({ error: 'Solicitação indisponivel.' });
     }
@@ -45,8 +44,8 @@ class ReserveController{
   }
 
   async destroy(req, res){
-    const { reserve_id } = req.body;
-
+    //const { reserve_id } = req.body;
+    const { reserve_id } = req.params
     await Reserve.findByIdAndDelete({ _id: reserve_id });
 
     return res.send();
